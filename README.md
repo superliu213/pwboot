@@ -104,7 +104,6 @@ $ mvn clean
 5.generator模板（单独）
 6.log4j（单独）
 ```
-默认支持logback
 ### 调整配置
 > 使用DBConfig.java
   - 配置druid连接池及其监控（同1.1和4）
