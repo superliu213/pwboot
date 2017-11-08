@@ -7,6 +7,7 @@ import com.springapp.common.util.GenUtils;
 import com.springapp.common.entity.Columns;
 import com.springapp.common.entity.Tables;
 import com.springapp.mvc.dao.impl.CodeDaoImpl;
+import com.springapp.mvc.service.CodeService;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,7 +18,7 @@ import java.util.Map;
 import java.util.zip.ZipOutputStream;
 
 @Service("codeService")
-public class CodeServiceImpl extends BaseServiceImpl{
+public class CodeServiceImpl extends BaseServiceImpl implements CodeService{
 
     @Autowired
     CodeDaoImpl codeDao;

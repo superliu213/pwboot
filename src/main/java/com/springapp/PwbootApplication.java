@@ -8,7 +8,6 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @EnableTransactionManagement
 @ServletComponentScan
-@MapperScan("com.springapp.*.dao.impl")
 @SpringBootApplication
 public class PwbootApplication {
 

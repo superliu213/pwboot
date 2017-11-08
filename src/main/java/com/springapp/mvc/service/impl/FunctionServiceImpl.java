@@ -7,6 +7,7 @@ import com.springapp.common.service.BaseServiceImpl;
 import com.springapp.mvc.dao.impl.FunctionDaoImpl;
 import com.springapp.mvc.dao.impl.RoleFunctionDaoImpl;
 import com.springapp.mvc.entity.Function;
+import com.springapp.mvc.service.FunctionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -18,7 +19,7 @@ import java.util.Map;
 
 @Service("functionService")
 @Transactional
-public class FunctionServiceImpl extends BaseServiceImpl {
+public class FunctionServiceImpl extends BaseServiceImpl implements FunctionService{
 
 	@Autowired
 	FunctionDaoImpl functionDao;

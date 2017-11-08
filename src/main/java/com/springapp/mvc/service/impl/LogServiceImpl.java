@@ -5,6 +5,7 @@ import com.springapp.common.entity.SysLog;
 import com.springapp.common.page.PageBean;
 import com.springapp.common.page.PageParam;
 import com.springapp.common.service.BaseServiceImpl;
+import com.springapp.mvc.service.LogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -16,7 +17,7 @@ import java.util.Map;
 
 @Service("logService")
 @Transactional
-public class LogServiceImpl extends BaseServiceImpl {
+public class LogServiceImpl extends BaseServiceImpl implements LogService{
 
 	@Autowired
 	SysLogDaoImpl sysLogDao;

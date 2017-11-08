@@ -5,6 +5,8 @@ server:
 spring:
   profiles:
     active: dev
+  aop:
+   proxy-target-class: true
 mybatis:
   configuration:
     map-underscore-to-camel-case: true

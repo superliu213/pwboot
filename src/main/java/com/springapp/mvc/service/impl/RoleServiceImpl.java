@@ -10,6 +10,7 @@ import com.springapp.mvc.dao.impl.UserRoleDaoImpl;
 import com.springapp.mvc.entity.Role;
 import com.springapp.mvc.entity.RoleFunction;
 import com.springapp.mvc.entity.UserRole;
+import com.springapp.mvc.service.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -20,7 +21,7 @@ import java.util.Map;
 
 @Service("roleService")
 @Transactional
-public class RoleServiceImpl extends BaseServiceImpl {
+public class RoleServiceImpl extends BaseServiceImpl implements RoleService {
 
     @Autowired
 	RoleDaoImpl roleDao;

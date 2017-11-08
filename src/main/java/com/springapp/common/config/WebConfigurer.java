@@ -39,10 +39,10 @@ class WebConfigurer extends WebMvcConfigurerAdapter {
         converters.add(1, mappingJackson2HttpMessageConverter);
     }
 
-    @Override
-    public void configureHandlerExceptionResolvers(List<HandlerExceptionResolver> exceptionResolvers) {
-        exceptionResolvers.add(0, new ExceptionHandlerExceptionResolver());
-    }
+//    @Override
+//    public void configureHandlerExceptionResolvers(List<HandlerExceptionResolver> exceptionResolvers) {
+//        exceptionResolvers.add(0, new ExceptionHandlerExceptionResolver());
+//    }
 
     @Override
     public void addInterceptors(InterceptorRegistry registry){

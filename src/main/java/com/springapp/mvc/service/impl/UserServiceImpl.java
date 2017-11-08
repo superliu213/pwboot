@@ -9,6 +9,7 @@ import com.springapp.mvc.dao.impl.UserDaoImpl;
 import com.springapp.mvc.dao.impl.UserGroupDaoImpl;
 import com.springapp.mvc.dao.impl.UserRoleDaoImpl;
 import com.springapp.mvc.entity.User;
+import com.springapp.mvc.service.UserService;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +23,7 @@ import java.util.Map;
 
 @Service("userService")
 @Transactional
-public class UserServiceImpl extends BaseServiceImpl {
+public class UserServiceImpl extends BaseServiceImpl implements UserService{
 
     @Autowired
 	UserDaoImpl userDao;

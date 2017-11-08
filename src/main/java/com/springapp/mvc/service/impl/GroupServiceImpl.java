@@ -9,6 +9,7 @@ import com.springapp.mvc.dao.impl.UserGroupDaoImpl;
 import com.springapp.mvc.entity.Group;
 import com.springapp.mvc.entity.GroupRole;
 import com.springapp.mvc.entity.UserGroup;
+import com.springapp.mvc.service.GroupService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -19,7 +20,7 @@ import java.util.Map;
 
 @Service("groupService")
 @Transactional
-public class GroupServiceImpl extends BaseServiceImpl{
+public class GroupServiceImpl extends BaseServiceImpl implements GroupService{
 
 	@Autowired
 	GroupDaoImpl groupDao;

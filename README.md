@@ -10,6 +10,7 @@
 - ORM使用mybatis实现，灵活的实现持久化处理
 - 自动生成代码功能，便于快速实现功能
 - 使用Druid连接池，进行运行监控
+- 后台实现统一的异常处理，实现代码解耦
 - 完备的文档说明和问题帮助说明
 
 ## 使用说明
@@ -120,7 +121,7 @@ $ mvn clean
 > 使用WebConfigurer.java
   - springboot默认支持RequestMappingHandlerMapping和webBindingInitializer(2.1）
   - 配置MessageConverters(同2.2)
-  - 配置HandlerExceptionResolvers(同2.3)
+  - 使用统一的异常处理CommonExceptionHandler(同2.3)
   - 权限拦截(同2.4)
 
 > static目录放前端代码(同2.5)

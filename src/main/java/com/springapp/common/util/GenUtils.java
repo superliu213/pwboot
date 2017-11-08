@@ -33,7 +33,6 @@ public class GenUtils {
 	public static List<String> getTemplates(){
 		List<String> templates = new ArrayList<String>();
 		templates.add("templates/generator/Controller.java.vm");
-		templates.add("templates/generator/Dao.java.vm");
 		templates.add("templates/generator/DaoImpl.java.vm");
 		templates.add("templates/generator/Entity.java.vm");
 		templates.add("templates/generator/Function.sql.vm");
@@ -181,9 +180,6 @@ public class GenUtils {
 
 		if(template.contains("Controller.java.vm")){
 			return packagePath + "controllers" + File.separator + className + "Controller.java";
-		}
-		if(template.contains("Dao.java.vm")){
-			return packagePath + "dao" + File.separator + className + "Dao.java";
 		}
 
 		if(template.contains("DaoImpl.java.vm")){
