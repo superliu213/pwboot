@@ -30,7 +30,7 @@ $ mvn clean
 > 本项目提供mysql版本数据库脚本，详见doc目录，运行项目前请配置数据库
 
 > 运行项目，执行PwbootApplication.java的main方法，打开url地址 http://localhost:8080/login.html
-
+          用户名:admin 密码:admin
 ## 目录结构说明
 
 ```
